@@ -1,10 +1,32 @@
 <style>
+body {
+    /*background-image: radial-gradient(circle at 10% 20%, rgb(0, 152, 155) 0.1%, rgb(0, 94, 120) 94.2%) !important;*/
+    background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 .social-foot {
-    line-height: 1em !important;
+    line-height:1em !important;
 }
 .ui-locale {
-    margin-bottom: 1.5em !important;
+    margin-bottom:1.5em !important;
 }
+#home {
+    padding-top:3em;
+}
+
+.symbols-digillab {
+    font-size:16px;
+    margin-top:1em;
+}
+
+button.ui-signin {
+    margin-left:1em;
+    margin-right:1em;
+    margin-bottom:0.5em;
+}
+
 </style>
 <div class="site-wrapper">
     <div class="site-wrapper-inner">
@@ -74,19 +96,19 @@
                         <div class="col-md-4 inner">
                             <a href="<%- serverURL %>/features#Share-Notes">
                                 <i class="fa fa-bolt fa-3x"></i>
-                                <p class="lead"><%= __('Collaborate with URL') %></p>
+                                <p class="symbols-digillab"><%= __('Collaborate with URL') %></p>
                             </a>
                         </div>
                         <div class="col-md-4 inner">
                             <a href="<%- serverURL %>/features#MathJax">
                                 <i class="fa fa-bar-chart fa-3x"></i>
-                                <p class="lead"><%= __('Support charts and MathJax') %></p>
+                                <p class="symbols-digillab"><%= __('Support charts and MathJax') %></p>
                             </a>
                         </div>
                         <div class="col-md-4 inner">
                             <a href="<%- serverURL %>/features#Slide-Mode">
                                 <i class="fa fa-tv fa-3x"></i>
-                                <p class="lead"><%= __('Support slide mode') %></p>
+                                <p class="symbols-digillab"><%= __('Support slide mode') %></p>
                             </a>
                         </div>
                     </div>
