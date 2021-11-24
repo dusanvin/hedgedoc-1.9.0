@@ -1,3 +1,11 @@
+<style>
+.social-foot {
+    line-height: 1em !important;
+}
+.ui-locale {
+    margin-bottom: 1.5em !important;
+}
+</style>
 <div class="site-wrapper">
     <div class="site-wrapper-inner">
         <div class="cover-container">
@@ -44,9 +52,6 @@
                     <p class="lead">
                         <%= __('Best way to write and share your knowledge in markdown.') %>
                     </p>
-                    <span class="alert alert-info" style="display: inline-block;">
-                        CodiMD was renamed to HedgeDoc. <a href="https://hedgedoc.org/history/" rel="noopener noreferrer" target="_blank" class="text-danger">Read more</a>
-                    </span>
                     <% if (infoMessage && infoMessage.length > 0) { %>
                     <div class="alert alert-info" style="max-width: 400px; margin: 0 auto;"><%= infoMessage %></div>
                     <% } %>
@@ -58,31 +63,30 @@
                         <br>
                         <a type="button" class="btn btn-lg btn-success ui-signin" data-toggle="modal" data-target=".signin-modal" style="min-width: 200px;"><%= __('Sign In') %></a>
                     </span>
-                    <span class="ui-or"><%= __('or') %></span>
                     <% } %>
                     <span class="ui-signin">
                         <a type="button" href="<%- serverURL %>/features" class="btn btn-lg btn-primary" style="min-width: 200px;"><%= __('Explore all features') %></a>
                         <br>
                         <br>
-                        <img src="<%- serverURL %>/screenshot.png" class="screenshot ui-signin">
+                        <!-- <img src="<%- serverURL %>/screenshot.png" class="screenshot ui-signin"> -->
                     </span>
-                    <div class="lead row" style="width: 90%; margin: 0 auto;">
+                    <div class="lead row" style="width: 90%; margin: 0 auto; margin-top: 3em !important; margin-bottom: 3em !important;">
                         <div class="col-md-4 inner">
                             <a href="<%- serverURL %>/features#Share-Notes">
                                 <i class="fa fa-bolt fa-3x"></i>
-                                <h4><%= __('Collaborate with URL') %></h4>
+                                <p class="lead"><%= __('Collaborate with URL') %></p>
                             </a>
                         </div>
                         <div class="col-md-4 inner">
                             <a href="<%- serverURL %>/features#MathJax">
                                 <i class="fa fa-bar-chart fa-3x"></i>
-                                <h4><%= __('Support charts and MathJax') %></h4>
+                                <p class="lead"><%= __('Support charts and MathJax') %></p>
                             </a>
                         </div>
                         <div class="col-md-4 inner">
                             <a href="<%- serverURL %>/features#Slide-Mode">
                                 <i class="fa fa-tv fa-3x"></i>
-                                <h4><%= __('Support slide mode') %></h4>
+                                <p class="lead"><%= __('Support slide mode') %></p>
                             </a>
                         </div>
                     </div>
